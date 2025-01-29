@@ -1,0 +1,13 @@
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url("./assets/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

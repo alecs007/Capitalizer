@@ -28,6 +28,7 @@
     font-weight: 900;
     font-style: normal;
     opacity: 0.85;
+    cursor: pointer;
   }
 }
 .header_p2 {
@@ -65,4 +66,5 @@
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  cursor: pointer;
 }

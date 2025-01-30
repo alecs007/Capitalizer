@@ -1,20 +1,68 @@
 .header {
   width: 70vw;
   height: 80px;
+  min-width: 1000px;
   backdrop-filter: blur(0px) saturate(100%);
   -webkit-backdrop-filter: blur(0px) saturate(100%);
   background-color: rgba(183, 255, 251, 0.45);
-  border-radius: 35px;
-  border: 1px solid rgba(41, 159, 189, 0.6);
+  border-radius: 30px;
+  border: 2px solid rgba(41, 159, 189, 0.6);
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
   margin-top: 5vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.header_p {
+  display: flex;
+  height: 100%;
+  width: 90%;
+}
+.header_p1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
   h1 {
-    margin-left: 25px;
+    margin: 0px 35px;
     font-family: "Oldenburg", serif;
     font-weight: 900;
     font-style: normal;
     opacity: 0.7;
   }
+}
+.header_p2 {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+.header_p3 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  img {
+    height: 42px;
+    aspect-ratio: 1/1;
+    opacity: 0.7;
+  }
+}
+.mode {
+  height: 60%;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oldenburg", serif;
+  font-weight: 900;
+  font-style: normal;
+  opacity: 0.7;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.6;
+  border-radius: 30px;
 }

@@ -27,7 +27,7 @@
     font-family: "Oldenburg", serif;
     font-weight: 900;
     font-style: normal;
-    opacity: 0.7;
+    opacity: 0.85;
   }
 }
 .header_p2 {
@@ -52,7 +52,7 @@
 .mode {
   height: 60%;
   width: 200px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +63,6 @@
   font-family: sans-serif;
   font-size: 18px;
   font-weight: 600;
-  opacity: 0.6;
-  border-radius: 30px;
+  opacity: 0.7;
+  border-radius: 10px;
 }

@@ -10,8 +10,8 @@ const Header = () => {
         </div>
         <div className="header_p2">
           <div className="mode">All countries</div>
-          <div className="mode">Flags</div>
           <div className="mode">1 of 4</div>
+          <div className="mode">Flags</div>
           <div className="mode">Continents</div>
         </div>
       </div>

@@ -34,9 +34,27 @@ const Header = () => {
               All countries
             </div>
           </Link>
-          <div className="mode">1 of 4</div>
-          <div className="mode">Flags</div>
-          <div className="mode">Continents</div>
+          <Link
+            to="/1-of-4"
+            style={{ textDecoration: "none", color: "inherit" }}
+            onClick={() => handleSelect("1-of-4")}
+          >
+            <div className="mode">1 of 4</div>
+          </Link>
+          <Link
+            to="/flags"
+            style={{ textDecoration: "none", color: "inherit" }}
+            onClick={() => handleSelect("flags")}
+          >
+            <div className="mode">Flags</div>
+          </Link>
+          <Link
+            to="/continents"
+            style={{ textDecoration: "none", color: "inherit" }}
+            onClick={() => handleSelect("continents")}
+          >
+            <div className="mode">Continents</div>
+          </Link>
         </div>
       </div>
       <div className="header_p3">

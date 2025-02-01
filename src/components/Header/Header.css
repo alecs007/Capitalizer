@@ -67,4 +67,8 @@
   color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.mode:hover {
+  transform: scale(0.95);
 }

@@ -74,6 +74,6 @@
   transform: scale(0.97);
 }
 .mode.active {
-  border: 2px solid rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   transform: scale(0.97);
 }

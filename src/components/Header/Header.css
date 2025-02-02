@@ -53,7 +53,6 @@
 .mode {
   height: 40px;
   width: clamp(150px, 10vw, 220px);
-
   background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;

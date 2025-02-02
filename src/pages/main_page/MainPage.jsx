@@ -106,7 +106,7 @@ const MainPage = () => {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={(e) => handleKeyPress(e)}
-                placeholder="Your answer"
+                placeholder="Enter capital name"
                 className="main_input"
               />
               <button

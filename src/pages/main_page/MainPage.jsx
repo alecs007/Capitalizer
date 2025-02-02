@@ -121,7 +121,7 @@ const MainPage = () => {
               </button>
             </div>
             <div className="status">
-              {finished && <h2>Finished</h2>}
+              {finished && <h2>No countries left</h2>}
               {isIncorrect && (
                 <h2>
                   Correct answer: <span>{randomCountry.capital}</span>{" "}

@@ -100,6 +100,16 @@ const MainPage = () => {
             <h1>{randomCountry.name}</h1>
           </div>
           <div className="input_container">
+            <div
+              className={`score_status ${isCorrect ? "correct" : ""} ${
+                isIncorrect ? "incorrect" : ""
+              }`}
+            >
+              <h1>
+                {isCorrect ? "+ 100 pts" : ""}
+                {isIncorrect ? "- 50 pts" : ""}
+              </h1>
+            </div>
             <div className="input">
               <input
                 type="text"

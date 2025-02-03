@@ -45,7 +45,7 @@
   gap: 20px;
 }
 .status {
-  height: 50px;
+  height: 30px;
   font-family: sans-serif;
   h2 {
     color: rgba(0, 0, 0, 0.5);
@@ -55,6 +55,18 @@
     color: rgba(0, 0, 0, 0.8);
   }
 }
+.score_status {
+  height: 50px;
+  font-family: sans-serif;
+  position: absolute;
+  margin-bottom: 150px;
+}
+.score_status.correct {
+  color: rgba(0, 99, 0, 0.6);
+}
+.score_status.incorrect {
+  color: rgba(255, 0, 0, 0.6);
+}
 .country_name {
   min-width: 35vw;
   display: flex;
@@ -63,20 +75,19 @@
   font-family: sans-serif;
   font-weight: 900;
   text-wrap: nowrap;
-  opacity: 0.9;
   font-size: clamp(3rem, 3vw, 6rem);
   padding: 10px 4vw;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px);
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.2);
 }
 .country_name.correct {
-  border: 2px solid rgba(0, 255, 0, 0.5);
+  border: 3px solid rgba(0, 255, 0, 0.5);
   background-color: rgba(0, 255, 76, 0.1);
 }
 .country_name.incorrect {
-  border: 2px solid rgba(255, 0, 0, 0.5);
+  border: 3px solid rgba(255, 0, 0, 0.5);
   background-color: rgba(255, 0, 0, 0.1);
 }
 .main_input {
@@ -164,7 +175,7 @@
   border-radius: 20px;
   backdrop-filter: blur(0px) saturate(100%);
   -webkit-backdrop-filter: blur(0px) saturate(100%);
-  background-color: rgba(183, 255, 251, 0.7);
+  background-color: rgba(214, 252, 250, 0.7);
   display: flex;
   align-items: center;
   user-select: none;

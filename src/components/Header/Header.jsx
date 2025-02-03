@@ -1,6 +1,9 @@
 import "./Header.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import github from "../../assets/github.png";
 
 const Header = () => {
@@ -8,6 +11,42 @@ const Header = () => {
 
   const handleSelect = (event) => {
     setSelected(event);
+  };
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 700,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 970,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 810,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -23,38 +62,42 @@ const Header = () => {
           </Link>
         </div>
         <div className="header_p2">
-          <Link
-            to="/all-countries"
-            style={{ textDecoration: "none", color: "inherit" }}
-            onClick={() => handleSelect("all-countries")}
-          >
-            <div
-              className={`mode ${selected === "all-countries" ? "active" : ""}`}
+          <Slider {...settings}>
+            <Link
+              to="/all-countries"
+              style={{ textDecoration: "none", color: "inherit" }}
+              onClick={() => handleSelect("all-countries")}
             >
-              All countries
-            </div>
-          </Link>
-          <Link
-            to="/1-of-4"
-            style={{ textDecoration: "none", color: "inherit" }}
-            onClick={() => handleSelect("1-of-4")}
-          >
-            <div className="mode">1 of 4</div>
-          </Link>
-          <Link
-            to="/flags"
-            style={{ textDecoration: "none", color: "inherit" }}
-            onClick={() => handleSelect("flags")}
-          >
-            <div className="mode">Flags</div>
-          </Link>
-          <Link
-            to="/continents"
-            style={{ textDecoration: "none", color: "inherit" }}
-            onClick={() => handleSelect("continents")}
-          >
-            <div className="mode">Continents</div>
-          </Link>
+              <div
+                className={`mode ${
+                  selected === "all-countries" ? "active" : ""
+                }`}
+              >
+                All countries
+              </div>
+            </Link>
+            <Link
+              to="/1-of-4"
+              style={{ textDecoration: "none", color: "inherit" }}
+              onClick={() => handleSelect("1-of-4")}
+            >
+              <div className="mode">1 of 4</div>
+            </Link>
+            <Link
+              to="/flags"
+              style={{ textDecoration: "none", color: "inherit" }}
+              onClick={() => handleSelect("flags")}
+            >
+              <div className="mode">Flags</div>
+            </Link>
+            <Link
+              to="/continents"
+              style={{ textDecoration: "none", color: "inherit" }}
+              onClick={() => handleSelect("continents")}
+            >
+              <div className="mode">Continents</div>
+            </Link>
+          </Slider>
         </div>
       </div>
       <div className="header_p3">

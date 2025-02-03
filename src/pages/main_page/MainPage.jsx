@@ -60,11 +60,14 @@ const MainPage = () => {
     setDisabled(true);
     if (inputValue.toLowerCase() === randomCountry.capital.toLowerCase()) {
       setIsCorrect(true);
-      setScore(score + 100);
+      setScore(score + 200);
     } else {
       setIsIncorrect(true);
-      if (score >= 50) {
-        setScore(score - 50);
+      if (score < 100) {
+        setScore(0);
+      }
+      if (score >= 100) {
+        setScore(score - 100);
       }
     }
     setTimeout(() => {
@@ -106,8 +109,8 @@ const MainPage = () => {
               }`}
             >
               <h1>
-                {isCorrect ? "+ 100 pts" : ""}
-                {isIncorrect && score ? "- 50 pts" : ""}
+                {isCorrect ? "+ 200 pts" : ""}
+                {isIncorrect && score ? "- 100 pts" : ""}
                 {score === 0 && isIncorrect ? "0 pts" : ""}
               </h1>
             </div>

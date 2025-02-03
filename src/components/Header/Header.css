@@ -137,7 +137,11 @@
     width: 130px;
   }
 }
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 520px) {
+  .header {
+    height: 75px;
+    min-height: 75px;
+  }
   .header_p1 {
     h1 {
       font-size: 1.6em;

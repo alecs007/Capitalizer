@@ -83,10 +83,10 @@ const MainPage = () => {
   };
 
   const handleHint = () => {
-    if (hintLenght > randomCountry.capital.length || score < 100) return;
+    if (hintLenght > randomCountry.capital.length || score < 50) return;
     setHintLenght(hintLenght + 1);
     setInputValue(randomCountry.capital.slice(0, hintLenght));
-    setScore(score - 100);
+    setScore(score - 50);
   };
   return (
     <section className="main_page">
@@ -145,7 +145,7 @@ const MainPage = () => {
               <img src={hint} alt="hint" />
               <div className="hint_text">
                 <h2>HINT</h2>
-                <p>100pts</p>
+                <p>50pts</p>
               </div>
             </div>
             <div className="score">

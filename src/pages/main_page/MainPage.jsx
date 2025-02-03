@@ -107,7 +107,8 @@ const MainPage = () => {
             >
               <h1>
                 {isCorrect ? "+ 100 pts" : ""}
-                {isIncorrect ? "- 50 pts" : ""}
+                {isIncorrect && score ? "- 50 pts" : ""}
+                {score === 0 && isIncorrect ? "0 pts" : ""}
               </h1>
             </div>
             <div className="input">

@@ -238,5 +238,6 @@
   .score {
     font-size: 1.3em;
     height: 5vh;
+    aspect-ratio: 3.85/1;
   }
 }

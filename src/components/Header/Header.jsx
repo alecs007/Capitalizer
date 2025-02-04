@@ -16,7 +16,7 @@ const Header = () => {
   const settings = {
     dots: false,
     infinite: false,
-    speed: 700,
+    speed: 150,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,

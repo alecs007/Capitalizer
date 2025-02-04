@@ -2,6 +2,7 @@ import "./MainLayout.css";
 import { Outlet, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import Loader from "../components/Loader/Loader";
 
 const MainLayout = () => {
@@ -20,6 +21,7 @@ const MainLayout = () => {
     <div className="main_layout">
       <Header />
       {loading ? <Loader /> : <Outlet />}
+      <Footer />
     </div>
   );
 };

@@ -86,6 +86,7 @@
   .header {
     width: 92vw;
     min-width: 100px;
+    margin-bottom: 7vh;
   }
   .header_p1 h1 {
     margin-right: 50px;

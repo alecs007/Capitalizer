@@ -39,7 +39,7 @@ const Header = () => {
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 715,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 }
 .header_p {
   display: flex;
@@ -80,6 +81,42 @@
 .mode.active {
   border: 2px solid rgba(0, 0, 0, 0.5);
   transform: scale(0.97);
+}
+.notification {
+  background: url("../../assets/notification.png");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  bottom: -67px;
+  right: 20vw;
+  width: 200px;
+  height: 75px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  color: rgba(0, 0, 0, 0.75);
+  transition: all 1s ease-in-out;
+  text-align: center;
+  line-height: 22px;
+  p {
+    margin-top: 5px;
+  }
+}
+.notification_close {
+  background: url("../../assets/x-mark.png");
+  background-size: cover;
+  background-position: center;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 970px) {

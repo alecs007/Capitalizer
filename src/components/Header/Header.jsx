@@ -1,5 +1,5 @@
 import "./Header.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,15 +8,24 @@ import github from "../../assets/github.png";
 
 const Header = () => {
   const [selected, setSelected] = useState(null);
+  const [showNotification, setShowNotification] = useState(false);
 
   const handleSelect = (event) => {
     setSelected(event);
   };
 
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited");
+    if (!hasVisited) {
+      setShowNotification(true);
+      localStorage.setItem("hasVisited", "true");
+    }
+  }, []);
+
   const settings = {
     dots: false,
     infinite: false,
-    speed: 150,
+    speed: 700,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
@@ -44,6 +53,7 @@ const Header = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
+          speed: 150,
         },
       },
     ],
@@ -105,6 +115,15 @@ const Header = () => {
           <img src={github} alt="github" />
         </a>
       </div>
+      {showNotification && (
+        <div className="notification">
+          <p>Click on the mode to change it</p>
+          <button
+            className="notification_close"
+            onClick={() => setShowNotification(false)}
+          ></button>
+        </div>
+      )}
     </div>
   );
 };

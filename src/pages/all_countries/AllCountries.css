@@ -1,0 +1,60 @@
+.all_countries {
+  width: 70vw;
+  height: 70vh;
+  min-width: 1000px;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15%;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+}
+.continent_name {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  text-wrap: nowrap;
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.continent_countries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.countries {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  overflow: hidden;
+}
+.countries_name {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+.countries_input {
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.countries_input:focus {
+  outline: none;
+}

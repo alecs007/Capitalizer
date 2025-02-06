@@ -17,9 +17,14 @@ const Header = () => {
   useEffect(() => {
     const hasVisited = localStorage.getItem("hasVisited");
     if (!hasVisited) {
-      setShowNotification(true);
-      localStorage.setItem("hasVisited", "true");
+      setTimeout(() => {
+        setShowNotification(true);
+      }, 600);
     }
+    setTimeout(() => {
+      setShowNotification(false);
+      localStorage.setItem("hasVisited", "true");
+    }, 5000);
   }, []);
 
   const settings = {

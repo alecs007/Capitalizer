@@ -45,7 +45,7 @@ const AllCountries = () => {
           <div key={continent}>
             <div className="continent_name">{continent}</div>
             <div className="continent_countries">
-              {countries[continent].map((country, countryIndex) => {
+              {countries[continent].map((country) => {
                 const globalIndex = Object.values(countries)
                   .flat()
                   .indexOf(country);

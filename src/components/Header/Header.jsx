@@ -6,8 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import github from "../../assets/github.png";
 
-const Header = () => {
-  const [selected, setSelected] = useState(null);
+const Header = ({ selected, setSelected }) => {
   const [showNotification, setShowNotification] = useState(false);
 
   const handleSelect = (event) => {

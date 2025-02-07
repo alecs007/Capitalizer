@@ -1,5 +1,6 @@
 import "./MainPage.css";
 import { useState, useEffect } from "react";
+import { useOutletContext } from "react-router-dom";
 import hint from "../../assets/hint.png";
 import trophy from "../../assets/trophy.png";
 import bronze from "../../assets/bronze_trophy.png";
@@ -18,8 +19,10 @@ const MainPage = () => {
   const [disabled, setDisabled] = useState(false);
   const [hintLenght, setHintLenght] = useState(1);
   const [score, setScore] = useState(0);
+  const { setSelected } = useOutletContext();
 
   useEffect(() => {
+    setSelected(null);
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {

@@ -8,6 +8,7 @@ import Loader from "../components/Loader/Loader";
 const MainLayout = () => {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
+  const [selected, setSelected] = useState(null);
 
   useEffect(() => {
     setLoading(true);
@@ -19,8 +20,8 @@ const MainLayout = () => {
   }, [location.pathname]);
   return (
     <div className="main_layout">
-      <Header />
-      {loading ? <Loader /> : <Outlet />}
+      <Header selected={selected} setSelected={setSelected} />
+      {loading ? <Loader /> : <Outlet context={{ selected, setSelected }} />}
       <Footer />
     </div>
   );

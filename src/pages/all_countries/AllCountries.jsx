@@ -1,12 +1,15 @@
 import "./AllCountries.css";
 import { useState, useEffect } from "react";
+import { useOutletContext } from "react-router-dom";
 
 const AllCountries = () => {
   const [countries, setCountries] = useState({});
   const [inputValues, setInputValues] = useState([]);
   const [disabledInputs, setDisabledInputs] = useState([]);
+  const { setSelected } = useOutletContext();
 
   useEffect(() => {
+    setSelected("all-countries");
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {

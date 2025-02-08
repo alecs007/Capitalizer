@@ -112,11 +112,13 @@ const Header = ({ selected, setSelected }) => {
               </div>
             </Link>
             <Link
-              to="/continents"
+              to="/reverse"
               style={{ textDecoration: "none", color: "inherit" }}
-              onClick={() => handleSelect("continents")}
+              onClick={() => handleSelect("reverse")}
             >
-              <div className="mode">Continents</div>
+              <div className={`mode ${selected === "reverse" ? "active" : ""}`}>
+                Reverse
+              </div>
             </Link>
           </Slider>
         </div>

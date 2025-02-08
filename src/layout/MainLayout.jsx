@@ -12,11 +12,9 @@ const MainLayout = () => {
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setLoading(false);
     }, 300);
-
-    return () => clearTimeout(timer);
   }, [location.pathname]);
   return (
     <div className="main_layout">

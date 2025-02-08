@@ -1,8 +1,14 @@
-# React + Vite
+# <h1 align="center"><strong><em>Capitalizer 🌍</em></strong></h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+**Capitalizer** is an interactive geography quiz that tests your knowledge of world capitals. Designed with a clean and intuitive interface, it provides a smooth and engaging way to improve geography skills.
+Whether you're looking to challenge yourself or expand your knowledge, Capitalizer offers a structured and accessible learning experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**What I learned while making Capitalizer:**
+
+    • Dynamic Content generation: Designed and implemented logic to randomly generate capitals while ensuring diversity and tracking user responses in real time.
+    • Game Logic Implementation: Developed structured logic to ensure smooth functionality and accurate score tracking.
+    • Multiple Game Modes: Created various gameplay options, each with distinct challenges and flexible logic for an engaging experience.
+    • Performance Optimization: Minimized unnecessary re-renders and optimized state updates for a seamless experience.
+
+Building Capitalizer allowed me to apply and refine my development skills while working on an interactive project. It highlights my ability to create structured, engaging applications that balance functionality and user experience.

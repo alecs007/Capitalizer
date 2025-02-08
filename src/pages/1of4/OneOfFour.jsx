@@ -52,7 +52,6 @@ const OneOfFour = () => {
       ...prevExcluded,
       randomCountry.name,
     ]);
-    getRandomAnswers();
   };
 
   useEffect(() => {
@@ -77,19 +76,20 @@ const OneOfFour = () => {
   console.log(excludedCountries);
 
   const handleAnswer = (capital) => {
-    if (isAnswered) return;
+    if (isAnswered || finished) return;
+
     setIsAnswered(true);
     setSelectedCapital(capital);
     if (capital === randomCountry.capital) {
       setIsCorrect(true);
-      setScore(score + 200);
+      setScore((prevScore) => prevScore + 200);
     } else {
       setIsIncorrect(true);
       if (score < 100) {
         setScore(0);
       }
       if (score >= 100) {
-        setScore(score - 100);
+        setScore((prevScore) => prevScore - 100);
       }
     }
     setTimeout(() => {

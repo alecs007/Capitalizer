@@ -6,6 +6,7 @@ const AllCountries = () => {
   const [countries, setCountries] = useState({});
   const [inputValues, setInputValues] = useState([]);
   const [disabledInputs, setDisabledInputs] = useState([]);
+  const [score, setScore] = useState(0);
   const { setSelected } = useOutletContext();
 
   useEffect(() => {
@@ -37,11 +38,13 @@ const AllCountries = () => {
         newDisabled[index] = true;
         return newDisabled;
       });
+      setScore((prevScore) => prevScore + 1);
     }
   };
 
   return (
     <section className="all_countries">
+      <div className="all_countries_status">{score} / 197</div>
       {Object.keys(countries)
         .sort((a, b) => countries[b].length - countries[a].length)
         .map((continent) => (

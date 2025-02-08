@@ -32,5 +32,5 @@ a {
 }
 .slick-prev::before,
 .slick-next::before {
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }

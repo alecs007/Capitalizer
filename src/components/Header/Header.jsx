@@ -42,6 +42,7 @@ const Header = ({ selected, setSelected }) => {
           slidesToShow: 3,
           slidesToScroll: 1,
           arrows: true,
+          infinite: true,
         },
       },
       {
@@ -50,6 +51,7 @@ const Header = ({ selected, setSelected }) => {
           slidesToShow: 2,
           slidesToScroll: 1,
           arrows: true,
+          infinite: true,
         },
       },
       {
@@ -58,6 +60,7 @@ const Header = ({ selected, setSelected }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
+          infinite: true,
           speed: 150,
         },
       },

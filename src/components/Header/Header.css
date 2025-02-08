@@ -8,7 +8,7 @@
   border-radius: 30px;
   border: 2px solid rgba(125, 179, 192, 0.5);
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-  margin: 5vh 0;
+  margin: 5vh 0 5vh 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@
     font-family: "Oldenburg", serif;
     font-weight: 900;
     font-style: normal;
-    opacity: 0.85;
+    opacity: 0.7;
     cursor: pointer;
   }
 }
@@ -184,6 +184,7 @@
   .header {
     height: 70px;
     min-height: 75px;
+    margin: 4vh 0 5vh 0;
   }
   .header_p3 {
     display: none;

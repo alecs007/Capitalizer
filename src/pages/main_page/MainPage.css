@@ -218,7 +218,6 @@
 @media screen and (max-width: 940px) {
   .main_page {
     width: 20vw;
-    height: 100%;
   }
   .form {
     justify-content: flex-start;
@@ -245,8 +244,9 @@
     margin-bottom: 100px;
   }
   .utilities {
+    margin-top: 30px;
     flex-direction: column;
-    gap: 4vh;
+    gap: 3vh;
   }
   .score {
     font-size: 1.3em;

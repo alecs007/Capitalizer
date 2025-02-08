@@ -1,6 +1,7 @@
 import "./Header.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -95,7 +96,9 @@ const Header = ({ selected, setSelected }) => {
               style={{ textDecoration: "none", color: "inherit" }}
               onClick={() => handleSelect("1-of-4")}
             >
-              <div className="mode">1 of 4</div>
+              <div className={`mode ${selected === "1-of-4" ? "active" : ""}`}>
+                1 of 4
+              </div>
             </Link>
             <Link
               to="/flags"
@@ -130,6 +133,11 @@ const Header = ({ selected, setSelected }) => {
       )}
     </div>
   );
+};
+
+Header.propTypes = {
+  selected: PropTypes.string.isRequired,
+  setSelected: PropTypes.func.isRequired,
 };
 
 export default Header;

@@ -92,11 +92,13 @@ const Header = ({ selected, setSelected }) => {
               </div>
             </Link>
             <Link
-              to="/1-of-4"
+              to="/one-of-four"
               style={{ textDecoration: "none", color: "inherit" }}
-              onClick={() => handleSelect("1-of-4")}
+              onClick={() => handleSelect("one-of-four")}
             >
-              <div className={`mode ${selected === "1-of-4" ? "active" : ""}`}>
+              <div
+                className={`mode ${selected === "one-of-four" ? "active" : ""}`}
+              >
                 1 of 4
               </div>
             </Link>

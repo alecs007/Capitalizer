@@ -13,7 +13,7 @@
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(12px);
-  overflow: scroll;
+  overflow: auto;
 }
 .all_countries_status {
   position: absolute;
@@ -29,7 +29,6 @@
 }
 .continent_name {
   width: 365px;
-  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;

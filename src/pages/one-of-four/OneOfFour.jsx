@@ -21,7 +21,7 @@ const OneOfFour = () => {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    setSelected("1-of-4");
+    setSelected("one-of-four");
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {

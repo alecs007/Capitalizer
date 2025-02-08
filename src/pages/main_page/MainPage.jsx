@@ -17,7 +17,7 @@ const MainPage = () => {
   const [isCorrect, setIsCorrect] = useState(false);
   const [isIncorrect, setIsIncorrect] = useState(false);
   const [disabled, setDisabled] = useState(false);
-  const [hintLenght, setHintLenght] = useState(1);
+  const [hintLength, setHintLength] = useState(1);
   const [score, setScore] = useState(0);
   const { setSelected } = useOutletContext();
 
@@ -30,9 +30,13 @@ const MainPage = () => {
         getRandomCountry(data);
       })
       .catch((error) => console.error("Failed to fetch data", error));
-  }, []);
+  }, [setSelected]);
 
   const getRandomCountry = (data) => {
+    if (!data || Object.keys(data).length === 0) {
+      setFinished(true);
+      return;
+    }
     if (excludedCountries.length >= 195) {
       setFinished(true);
       return;
@@ -63,14 +67,14 @@ const MainPage = () => {
     setDisabled(true);
     if (inputValue.toLowerCase() === randomCountry.capital.toLowerCase()) {
       setIsCorrect(true);
-      setScore(score + 200);
+      setScore((prevScore) => prevScore + 200);
     } else {
       setIsIncorrect(true);
       if (score < 100) {
         setScore(0);
       }
       if (score >= 100) {
-        setScore(score - 100);
+        setScore((prevScore) => prevScore - 100);
       }
     }
     setTimeout(() => {
@@ -89,10 +93,10 @@ const MainPage = () => {
   };
 
   const handleHint = () => {
-    if (hintLenght > randomCountry.capital.length || score < 50) return;
-    setHintLenght(hintLenght + 1);
-    setInputValue(randomCountry.capital.slice(0, hintLenght));
-    setScore(score - 50);
+    if (hintLength >= randomCountry.capital.length || score < 50) return;
+    setHintLength((prevHintLength) => prevHintLength + 1);
+    setInputValue(randomCountry.capital.slice(0, hintLength));
+    setScore((prevScore) => prevScore - 50);
   };
   return (
     <section className="main_page">
@@ -129,7 +133,7 @@ const MainPage = () => {
               <button
                 onClick={() => {
                   handleAnswer();
-                  setHintLenght(1);
+                  setHintLength(1);
                 }}
                 disabled={disabled}
                 className="main_button"

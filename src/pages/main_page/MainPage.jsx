@@ -157,11 +157,15 @@ const MainPage = () => {
             <div className="score">
               <div className="score_p1">{score} pts</div>
               <div className="score_p2">
-                {score < 500 && <img src={trophy} />}
-                {score >= 500 && score < 1000 && <img src={bronze} />}
-                {score >= 1000 && score < 1500 && <img src={silver} />}
-                {score >= 1500 && score < 2000 && <img src={gold} />}
-                {score >= 2000 && <img src={diamond} />}
+                {score < 500 && <img src={trophy} alt="trophy" />}
+                {score >= 500 && score < 1000 && (
+                  <img src={bronze} alt="bronze" />
+                )}
+                {score >= 1000 && score < 1500 && (
+                  <img src={silver} alt="silver" />
+                )}
+                {score >= 1500 && score < 2000 && <img src={gold} alt="gold" />}
+                {score >= 2000 && <img src={diamond} alt="diamond" />}
               </div>
             </div>
           </div>

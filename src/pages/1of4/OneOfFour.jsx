@@ -1,6 +1,11 @@
 import "./OneOfFour.css";
 import { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
+import trophy from "../../assets/trophy.png";
+import bronze from "../../assets/bronze_trophy.png";
+import silver from "../../assets/silver_trophy.png";
+import gold from "../../assets/gold_trophy.png";
+import diamond from "../../assets/diamond_trophy.png";
 
 const OneOfFour = () => {
   const { setSelected } = useOutletContext();
@@ -139,7 +144,20 @@ const OneOfFour = () => {
           {finished && (
             <div className="one_of_four_status">No countries left</div>
           )}
-          <div className="one_of_four_score">{score} pts</div>
+          <div className="one_of_four_score">
+            <div className="one_of_four_score_p">{score} pts</div>
+            <div className="one_of_four_score_img">
+              {score < 500 && <img src={trophy} alt="trophy" />}
+              {score >= 500 && score < 1000 && (
+                <img src={bronze} alt="bronze" />
+              )}
+              {score >= 1000 && score < 1500 && (
+                <img src={silver} alt="silver" />
+              )}
+              {score >= 1500 && score < 2000 && <img src={gold} alt="gold" />}
+              {score >= 2000 && <img src={diamond} alt="diamond" />}
+            </div>
+          </div>
         </div>
       )}
     </section>

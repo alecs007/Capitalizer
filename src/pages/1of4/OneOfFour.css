@@ -55,8 +55,9 @@
   height: 45%;
   background-color: rgba(226, 226, 226, 0.2);
   backdrop-filter: blur(5px);
-  border: 3px solid rgba(56, 126, 122, 0.5);
+  border: 3px solid rgba(56, 126, 122, 0.3);
   border-radius: 10px;
+  overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
@@ -96,6 +97,27 @@
   align-items: center;
   justify-content: center;
   user-select: none;
+}
+.one_of_four_score_p {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 900;
+}
+.one_of_four_score_img {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  img {
+    opacity: 0.6;
+    height: 35px;
+  }
 }
 .one_of_four_score_status {
   height: 40px;

@@ -87,6 +87,7 @@
   }
   .countries_input {
     width: 40%;
+    font-size: 16px;
   }
   .countries {
     width: 320px;

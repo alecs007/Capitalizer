@@ -21,15 +21,15 @@ const AllCountries = () => {
         setDisabledInputs(Array(allCountries.length).fill(false));
       })
       .catch((error) => console.error("Failed to fetch data", error));
-  }, []);
+  }, [setSelected]);
 
   const handleInputChange = (index, value, capital) => {
     const newInputValues = [...inputValues];
     newInputValues[index] = value;
     setInputValues(newInputValues);
     if (value.toLowerCase() === capital.toLowerCase()) {
-      setInputValues((prevValues) => {
-        const newValues = [...prevValues];
+      setInputValues((prev) => {
+        const newValues = [...prev];
         newValues[index] = capital;
         return newValues;
       });
@@ -59,7 +59,6 @@ const AllCountries = () => {
                   <div key={country.name} className="countries">
                     <div className="countries_name">{country.name}</div>
                     <input
-                      key={country.name}
                       value={inputValues[globalIndex]}
                       type="text"
                       disabled={disabledInputs[globalIndex]}

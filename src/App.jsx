@@ -7,6 +7,7 @@ import Loader from "./components/Loader/Loader";
 const MainPage = lazy(() => import("./pages/main_page/MainPage"));
 const AllCountries = lazy(() => import("./pages/all_countries/AllCountries"));
 const OneOfFour = lazy(() => import("./pages/one-of-four/OneOfFour"));
+const Flags = lazy(() => import("./pages/flags/Flags"));
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/all-countries" element={<AllCountries />} />
             <Route path="/one-of-four" element={<OneOfFour />} />
+            <Route path="/flags" element={<Flags />} />
           </Route>
         </Routes>
       </Suspense>

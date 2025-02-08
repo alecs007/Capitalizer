@@ -107,7 +107,9 @@ const Header = ({ selected, setSelected }) => {
               style={{ textDecoration: "none", color: "inherit" }}
               onClick={() => handleSelect("flags")}
             >
-              <div className="mode">Flags</div>
+              <div className={`mode ${selected === "flags" ? "active" : ""}`}>
+                Flags
+              </div>
             </Link>
             <Link
               to="/continents"

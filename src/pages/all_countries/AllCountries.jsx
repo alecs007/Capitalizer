@@ -41,7 +41,7 @@ const AllCountries = () => {
   };
 
   return (
-    <div className="all_countries">
+    <section className="all_countries">
       {Object.keys(countries)
         .sort((a, b) => countries[b].length - countries[a].length)
         .map((continent) => (
@@ -75,7 +75,7 @@ const AllCountries = () => {
             </div>
           </div>
         ))}
-    </div>
+    </section>
   );
 };
 

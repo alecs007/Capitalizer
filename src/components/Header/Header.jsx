@@ -136,7 +136,7 @@ const Header = ({ selected, setSelected }) => {
 };
 
 Header.propTypes = {
-  selected: PropTypes.string.isRequired,
+  selected: PropTypes.string,
   setSelected: PropTypes.func.isRequired,
 };
 

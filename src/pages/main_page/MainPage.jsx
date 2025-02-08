@@ -58,8 +58,6 @@ const MainPage = () => {
     ]);
   };
 
-  console.log(excludedCountries);
-
   const handleAnswer = () => {
     if (inputValue.trim().length < 1) {
       return;

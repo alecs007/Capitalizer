@@ -73,8 +73,6 @@ const Flags = () => {
     setRandomAnswers(shuffledIncorrectAnswers);
   };
 
-  console.log(excludedCountries);
-
   const handleAnswer = (capital) => {
     if (isAnswered || finished) return;
 

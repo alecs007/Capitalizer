@@ -29,7 +29,7 @@ const OneOfFour = () => {
         getRandomCountry(data);
       })
       .catch((error) => console.error("Failed to fetch data", error));
-  }, []);
+  }, [setSelected]);
 
   const getRandomCountry = (data) => {
     if (excludedCountries.length >= 195) {

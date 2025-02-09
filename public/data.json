@@ -443,11 +443,6 @@
       "flag": "https://flagcdn.com/w320/qa.png"
     },
     {
-      "name": "Russia",
-      "capital": "Moscow",
-      "flag": "https://flagcdn.com/w320/ru.png"
-    },
-    {
       "name": "Saudi Arabia",
       "capital": "Riyadh",
       "flag": "https://flagcdn.com/w320/sa.png"
@@ -519,7 +514,7 @@
     },
     {
       "name": "Yemen",
-      "capital": "Sana'a",
+      "capital": "Sanaa",
       "flag": "https://flagcdn.com/w320/ye.png"
     }
   ],
@@ -607,19 +602,9 @@
       "flag": "https://flagcdn.com/w320/ad.png"
     },
     {
-      "name": "Armenia",
-      "capital": "Yerevan",
-      "flag": "https://flagcdn.com/w320/am.png"
-    },
-    {
       "name": "Austria",
       "capital": "Vienna",
       "flag": "https://flagcdn.com/w320/at.png"
-    },
-    {
-      "name": "Azerbaijan",
-      "capital": "Baku",
-      "flag": "https://flagcdn.com/w320/az.png"
     },
     {
       "name": "Belarus",
@@ -647,11 +632,6 @@
       "flag": "https://flagcdn.com/w320/hr.png"
     },
     {
-      "name": "Cyprus",
-      "capital": "Nicosia",
-      "flag": "https://flagcdn.com/w320/cy.png"
-    },
-    {
       "name": "Czech Republic",
       "capital": "Prague",
       "flag": "https://flagcdn.com/w320/cz.png"
@@ -675,11 +655,6 @@
       "name": "France",
       "capital": "Paris",
       "flag": "https://flagcdn.com/w320/fr.png"
-    },
-    {
-      "name": "Georgia",
-      "capital": "Tbilisi",
-      "flag": "https://flagcdn.com/w320/ge.png"
     },
     {
       "name": "Germany",
@@ -712,11 +687,6 @@
       "flag": "https://flagcdn.com/w320/it.png"
     },
     {
-      "name": "Kazakhstan",
-      "capital": "Astana",
-      "flag": "https://flagcdn.com/w320/kz.png"
-    },
-    {
       "name": "Kosovo",
       "capital": "Pristina",
       "flag": "https://flagcdn.com/w320/xk.png"
@@ -737,8 +707,8 @@
       "flag": "https://flagcdn.com/w320/lt.png"
     },
     {
-      "name": "Luxemburg",
-      "capital": "Luxemburg",
+      "name": "Luxembourg",
+      "capital": "Luxembourg",
       "flag": "https://flagcdn.com/w320/lu.png"
     },
     {
@@ -830,11 +800,6 @@
       "name": "Switzerland",
       "capital": "Bern",
       "flag": "https://flagcdn.com/w320/ch.png"
-    },
-    {
-      "name": "Turkey",
-      "capital": "Ankara",
-      "flag": "https://flagcdn.com/w320/tr.png"
     },
     {
       "name": "Ukraine",

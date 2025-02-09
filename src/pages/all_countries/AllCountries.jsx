@@ -15,14 +15,14 @@ const AllCountries = () => {
       .then((res) => res.json())
       .then((data) => {
         setCountries(data);
-
+        console.log(data);
         const allCountries = Object.values(data).flat();
         setInputValues(Array(allCountries.length).fill(""));
         setDisabledInputs(Array(allCountries.length).fill(false));
       })
       .catch((error) => console.error("Failed to fetch data", error));
   }, [setSelected]);
-
+  console.log(Object.values(countries).flat().length);
   const handleInputChange = (index, value, capital) => {
     const newInputValues = [...inputValues];
     newInputValues[index] = value;

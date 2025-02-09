@@ -44,7 +44,7 @@ const AllCountries = () => {
 
   return (
     <section className="all_countries">
-      <div className="all_countries_status">{score} / 197</div>
+      <div className="all_countries_status">{score} / 196</div>
       {Object.keys(countries)
         .sort((a, b) => countries[b].length - countries[a].length)
         .map((continent) => (

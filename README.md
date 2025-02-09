@@ -12,3 +12,5 @@ Whether you're looking to challenge yourself or expand your knowledge, Capitaliz
     • Performance Optimization: Minimized unnecessary re-renders and optimized state updates for a seamless experience.
 
 Building Capitalizer allowed me to apply and refine my development skills while working on an interactive project. It highlights my ability to create structured, engaging applications that balance functionality and user experience.
+
+![capitalizer_presentation](https://github.com/user-attachments/assets/fa91105b-4fab-41b8-aad5-c051c95d26c2)

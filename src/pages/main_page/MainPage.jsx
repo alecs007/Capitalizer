@@ -1,6 +1,7 @@
 import "./MainPage.css";
 import { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
+import arrow from "../../assets/arrow.png";
 import hint from "../../assets/hint.png";
 import trophy from "../../assets/trophy.png";
 import bronze from "../../assets/bronze_trophy.png";
@@ -20,6 +21,7 @@ const MainPage = () => {
   const [hintLength, setHintLength] = useState(1);
   const [score, setScore] = useState(0);
   const { setSelected } = useOutletContext();
+  const [next, setNext] = useState(false);
 
   useEffect(() => {
     setSelected(null);
@@ -59,6 +61,24 @@ const MainPage = () => {
   };
 
   const handleAnswer = () => {
+    if (next === true) {
+      setDisabled(true);
+      setIsIncorrect(true);
+      if (score < 100) {
+        setScore(0);
+      }
+      if (score >= 100) {
+        setScore((prevScore) => prevScore - 100);
+      }
+      setTimeout(() => {
+        getRandomCountry(countries);
+        setIsIncorrect(false);
+        setInputValue("");
+        setDisabled(false);
+        setNext(false);
+      }, 1000);
+      return;
+    }
     if (inputValue.trim().length < 1) {
       return;
     }
@@ -96,6 +116,13 @@ const MainPage = () => {
     setInputValue(randomCountry.capital.slice(0, hintLength));
     setScore((prevScore) => prevScore - 50);
   };
+
+  useEffect(() => {
+    if (next) {
+      handleAnswer();
+    }
+  }, [next]);
+
   return (
     <section className="main_page">
       {randomCountry && (
@@ -145,6 +172,17 @@ const MainPage = () => {
                 <h2>
                   Correct answer: <span>{randomCountry.capital}</span>{" "}
                 </h2>
+              )}
+              {!isIncorrect && !finished && (
+                <div
+                  className="next-button"
+                  onClick={() => {
+                    setNext(true);
+                  }}
+                >
+                  <p>Next</p>
+                  <img src={arrow} alt="arrow" />
+                </div>
               )}
             </div>
           </div>

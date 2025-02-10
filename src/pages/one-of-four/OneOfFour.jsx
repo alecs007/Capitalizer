@@ -145,15 +145,15 @@ const OneOfFour = () => {
           <div className="one_of_four_score">
             <div className="one_of_four_score_p">{score} pts</div>
             <div className="one_of_four_score_img">
-              {score < 500 && <img src={trophy} alt="trophy" />}
-              {score >= 500 && score < 1000 && (
+              {score < 1000 && <img src={trophy} alt="trophy" />}
+              {score >= 1000 && score < 3000 && (
                 <img src={bronze} alt="bronze" />
               )}
-              {score >= 1000 && score < 1500 && (
+              {score >= 3000 && score < 5000 && (
                 <img src={silver} alt="silver" />
               )}
-              {score >= 1500 && score < 2000 && <img src={gold} alt="gold" />}
-              {score >= 2000 && <img src={diamond} alt="diamond" />}
+              {score >= 5000 && score < 10000 && <img src={gold} alt="gold" />}
+              {score >= 10000 && <img src={diamond} alt="diamond" />}
             </div>
           </div>
         </div>

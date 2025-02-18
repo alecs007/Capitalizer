@@ -11,7 +11,7 @@ Whether you're looking to challenge yourself or expand your knowledge, Capitaliz
     • Multiple Game Modes: Created various gameplay options, each with distinct challenges and flexible logic for an engaging experience.
     • Performance Optimization: Minimized unnecessary re-renders and optimized state updates for a seamless experience.
 
-Building Capitalizer allowed me to apply and refine my development skills while working on an interactive project. It highlights my ability to create structured, engaging applications that balance functionality and user experience.
+Buildingd Capitalizer allowed me to apply and refine my development skills while working on an interactive project. It highlights my ability to create structured, engaging applications that balance functionality and user experience.
 
 ![capitalizer_presentation](https://github.com/user-attachments/assets/104f4663-a2d0-4451-9781-44bdc49921e2)
 

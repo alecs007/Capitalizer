@@ -13,7 +13,8 @@ Whether you're looking to challenge yourself or expand your knowledge, Capitaliz
 
 Building Capitalizer allowed me to apply and refine my development skills while working on an interactive project. It highlights my ability to create structured, engaging applications that balance functionality and user experience.
 
-![capitalizer_presentation](https://github.com/user-attachments/assets/104f4663-a2d0-4451-9781-44bdc49921e2)
+![capitalizer_presentation3](https://github.com/user-attachments/assets/e59893ac-b8be-4f35-9f02-120779d5911b)
+
 
 
 

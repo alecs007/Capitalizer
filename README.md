@@ -1,7 +1,7 @@
 # <h1 align="center"><strong><em>Capitalizer 🌍</em></strong></h1>
 
 
-**Capitalizer** is bsbsan interactive geography quiz game that tests your knowledge of world capitals. Designed with a clean and intuitive interface, it provides a smooth and engaging way to improve geography skills.
+**Capitalizer** is an interactive geography quiz game that tests your knowledge of world capitals. Designed with a clean and intuitive interface, it provides a smooth and engaging way to improve geography skills.
 Whether you're looking to challenge yourself or expand your knowledge, Capitalizer offers a structured and accessible learning experience.
 
 **What I learned while making Capitalizer:**
